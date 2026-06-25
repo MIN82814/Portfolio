@@ -1,0 +1,174 @@
+@use "sass:map";
+
+:root {
+  $breakpoint-md: 991px;
+  $breakpoint-sm: 767px;
+
+  // Display 系列
+  --fs-display-1: 300px;
+  --fs-display-2: 160px;
+
+  // Heading 系列
+  --fs-heading-xxxl: 80px;
+  --fs-heading-xxl: 48px;
+  --fs-heading-xl: 40px;
+  --fs-heading-lg: 32px;
+  --fs-heading-md: 28px;
+  --fs-heading-sm: 24px;
+  --fs-heading-xs: 20px;
+  --fs-heading-xxs: 18px;
+  --fs-heading-xxxs: 16px;
+  --fs-heading-xxxxs: 14px;
+
+  // Label 系列
+  --fs-label-md: 16px;
+  --fs-label-sm: 14px;
+  --fs-label-xs: 13px;
+
+  // Paragraph 系列
+  --fs-para-md: 16px;
+  --fs-para-sm: 14px;
+  --fs-para-xs: 13px;
+}
+
+// ==========================================================================
+// 2. SCSS Map 結構（包裝數值與權重）
+// ==========================================================================
+$typography-map: (
+  "display-1": (
+    size: var(--fs-display-1),
+    weight: 700,
+    lh: 1.2,
+  ),
+  "display-2": (
+    size: var(--fs-display-2),
+    weight: 700,
+    lh: 1.2,
+  ),
+
+  "heading-xxxl": (
+    size: var(--fs-heading-xxxl),
+    weight: 700,
+    lh: 1.2,
+  ),
+  "heading-xxl": (
+    size: var(--fs-heading-xxl),
+    weight: 700,
+    lh: 1.2,
+  ),
+  "heading-xl": (
+    size: var(--fs-heading-xl),
+    weight: 700,
+    lh: 1.2,
+  ),
+  "heading-lg": (
+    size: var(--fs-heading-lg),
+    weight: 700,
+    lh: 1.5,
+  ),
+  "heading-md": (
+    size: var(--fs-heading-md),
+    weight: 700,
+    lh: 1.5,
+  ),
+  "heading-sm": (
+    size: var(--fs-heading-sm),
+    weight: 700,
+    lh: 1.5,
+  ),
+  "heading-xs": (
+    size: var(--fs-heading-xs),
+    weight: 700,
+    lh: 1.5,
+  ),
+  "heading-xxs": (
+    size: var(--fs-heading-xxs),
+    weight: 700,
+    lh: 1.5,
+  ),
+  "heading-xxxs": (
+    size: var(--fs-heading-xxxs),
+    weight: 700,
+    lh: 1.5,
+  ),
+  "heading-xxxxs": (
+    size: var(--fs-heading-xxxxs),
+    weight: 700,
+    lh: 1.5,
+  ),
+
+  "label-md": (
+    size: var(--fs-label-md),
+    weight: 500,
+    lh: 1.5,
+  ),
+  "label-sm": (
+    size: var(--fs-label-sm),
+    weight: 500,
+    lh: 1.5,
+  ),
+  "label-x": (
+    size: var(--fs-label-xs),
+    weight: 500,
+    lh: 1.5,
+  ),
+
+  "para-md": (
+    size: var(--fs-para-md),
+    weight: 500,
+    lh: 1.5,
+  ),
+  "para-sm": (
+    size: var(--fs-para-sm),
+    weight: 500,
+    lh: 1.5,
+  ),
+  "para-xs": (
+    size: var(--fs-para-xs),
+    weight: 500,
+    lh: 1.5,
+  ),
+);
+
+// ==========================================================================
+// 3. 核心生成邏輯：產生 預設(桌機)、-md(平板)、-sm(手機) 的字體 class
+// ==========================================================================
+
+// 【第一套：預設桌機版 (如 .fs-heading-xx-lg)】
+@each $name, $properties in $typography-map {
+  .fs-#{$name} {
+    font-size: map.get($properties, size);
+    font-weight: map.get($properties, weight);
+    line-height: map.get($properties, lh);
+  }
+}
+
+// 【第二套：平板斷點 (如 .fs-md-heading-lg)】-> 991px 以下觸發
+@media (max-width: 991px) {
+  @each $name, $properties in $typography-map {
+    .fs-md-#{$name} {
+      font-size: map.get($properties, size);
+      font-weight: map.get($properties, weight);
+      line-height: map.get($properties, lh);
+    }
+  }
+}
+
+// 【第三套：手機斷點 (如 .fs-sm-heading-md)】-> 767px 以下觸發
+@media (max-width: 767px) {
+  @each $name, $properties in $typography-map {
+    .fs-sm-#{$name} {
+      font-size: map.get($properties, size);
+      font-weight: map.get($properties, weight);
+      line-height: map.get($properties, lh);
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}

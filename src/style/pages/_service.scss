@@ -1,0 +1,258 @@
+.service-page {
+  .service-container {
+    max-width: 1100px;
+    padding: 0px 12px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .service-menu {
+    background-color: var(--dark-40);
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/service_banner.png?raw=true);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .service-menu-list {
+      display: flex;
+      gap: 24px;
+
+      li {
+        width: calc(25% - 12px);
+        background-color: var(--primary-50);
+        color: var(--neutral-0);
+
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-20px);
+        }
+
+        button {
+          padding: 32px;
+          width: 100%;
+          border: none;
+          cursor: pointer;
+
+          transition: background-color 0.3s ease;
+
+          &.active {
+            background-color: var(--primary-900);
+            color: var(--neutral-0);
+          }
+          .material-symbols-outlined {
+            font-size: 28px;
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .service-title {
+    max-width: 416px;
+    width: 100%;
+  }
+
+  .circle {
+    display: flex;
+    flex-direction: column;
+    height: 142px;
+
+    .circle-number {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+
+      border-radius: 999px;
+      background: var(--neutral-0);
+
+      font-size: var(--fs-para-md);
+      font-weight: 500;
+      line-height: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 1px;
+        height: 102px;
+        background-color: var(--neutral-0);
+      }
+    }
+  }
+
+  .service-case-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .service-case {
+      display: flex;
+      width: calc(50% - 12px);
+      transition: background-color 0.3s ease;
+
+      .service-case-card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .card-img {
+          width: 100%;
+          height: 306px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transition: scale 0.3s ease;
+          }
+        }
+      }
+
+      .arrow-btn {
+        transition: background-color 0.3s ease;
+      }
+
+      &:hover {
+        .service-case-card {
+          .card-img img {
+            scale: 1.1;
+          }
+        }
+
+        .arrow-btn {
+          background-color: var(--neutral-900);
+        }
+      }
+    }
+  }
+
+  .qa-card {
+    padding: 24px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary-900);
+
+    .qa-title {
+      display: flex;
+      gap: 16px;
+      transition: color 0.3s ease;
+
+      .material-symbols-outlined {
+        margin-left: auto;
+        font-style: 28px;
+        height: 28px;
+        width: 28px;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .qa-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0px 40px 0px 40px;
+
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      .qa-title {
+        color: var(--neutral-900);
+      }
+    }
+
+    &.active {
+      .qa-title {
+        .material-symbols-outlined {
+          transform: rotate(-180deg);
+        }
+      }
+
+      .qa-content {
+        max-height: 120px;
+        opacity: 1;
+        padding: 16px 40px 0px 40px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .service-menu {
+      .service-menu-list {
+        gap: 12px;
+        flex-wrap: wrap;
+        li {
+          width: calc(50% - 6px);
+          button {
+            padding: 16px;
+            .material-symbols-outlined {
+              font-size: 24px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .service-title {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .circle {
+      height: 130px;
+      .circle-number {
+        width: 36px;
+        height: 36px;
+
+        font-size: var(--fs-para-sm);
+        &::after {
+          height: 94px;
+        }
+      }
+    }
+
+    .service-case-list {
+      .service-case {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .service-case-card {
+          width: 100%;
+          gap: 8px;
+          .card-img {
+            height: 203px;
+          }
+        }
+      }
+    }
+
+    .qa-card {
+      padding: 16px;
+
+      .qa-title {
+        gap: 12px;
+      }
+
+      &.active {
+        .qa-content {
+          max-height: 160px;
+          padding: 8px 36px 0px 36px;
+        }
+      }
+    }
+  }
+}

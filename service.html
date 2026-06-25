@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+    />
+    <title>Serviece 服務項目 | Nelson</title>
+  </head>
+  <body>
+    <!-- header -->
+    <load src="./src/components/header.html" />
+    <div class="header-overlay"></div>
+
+    <main class="service-page">
+      <section class="service-menu py-10 py-md-7">
+        <div
+          data-aos="fade-down"
+          class="service-container text-neutral-0 text-center"
+        >
+          <div class="mb-7 mb-md-5">
+            <h1 class="fs-heading-xxxl fs-md-heading-xl mb-2 mb-md-0">SERVICES</h1>
+            <p class="fs-heading-xxl fs-md-heading-xl">服務項目</p>
+          </div>
+          <ul class="service-menu-list"></ul>
+        </div>
+      </section>
+
+      <section class="service-steps bg-primary-900 py-10 py-md-7">
+        <div class="service-container">
+          <div class="d-flex flex-md-column gap-5">
+            <div class="service-title text-neutral-0">
+              <p class="fs-heading-xxxs fs-md-heading-xxxxs">SERVICE STEPS</p>
+              <h2 class="fs-heading-xxl fs-md-heading-xl mb-md-3">服務流程</h2>
+            </div>
+            <ul
+              data-aos="fade-right"
+              class="service-steps-content"
+            ></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-case py-10 py-md-7">
+        <div
+          data-aos="fade-down"
+          class="service-container"
+        >
+          <div class="mb-7">
+            <p class="fs-heading-xxxs fs-md-heading-xxxxs">USER CASE</p>
+            <h2 class="fs-heading-xxl fs-md-heading-xl">客戶案例</h2>
+          </div>
+          <ul class="service-case-list"></ul>
+        </div>
+      </section>
+
+      <section class="service-qa py-10 py-md-7">
+        <div class="service-container">
+          <div class="d-flex flex-md-column gap-5">
+            <div class="service-title">
+              <p class="fs-heading-xxxs fs-md-heading-xxxxs">FAQ</p>
+              <h2 class="fs-heading-xxl fs-md-heading-xl mb-md-3">常見問題</h2>
+            </div>
+            <ul
+              data-aos="fade-right"
+              class="qa-list w-full"
+            ></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- modal -->
+    <load src="./src/components/projectModal.html" />
+
+    <!-- footer -->
+    <load src="./src/components/footer.html" />
+
+    <!-- JS -->
+    <script
+      type="module"
+      src="./src/main.js"
+    ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+</html>

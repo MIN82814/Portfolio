@@ -1,0 +1,42 @@
+.service {
+  overflow: hidden;
+
+  .service-list {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+
+    li {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .service-card-link {
+    background: var(--primary-50);
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-6px);
+      .arrow-btn-primary {
+        background: var(--neutral-900);
+      }
+    }
+    p strong {
+     font-weight: 600;
+     color: var(--primary-700); 
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    .service-list {
+      overflow: scroll;
+      li {
+        flex: 0 0 260px;
+        gap: 8px;
+      }
+    }
+  }
+}

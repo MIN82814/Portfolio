@@ -1,0 +1,202 @@
+// flex 應用
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-md-column {
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-md-wrap {
+  @media (max-width: 996px) {
+    flex-wrap: wrap;
+  }
+}
+
+.w-full {
+  width: 100%;
+}
+
+.order-first {
+  order: -1;
+}
+
+.order-md-first {
+  @media (max-width: 992px) {
+    order: -1;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+// 1. 全域尺寸變數
+:root {
+  --grid-gap: 24px;
+  --container-max-width: 1328px;
+  --container-padding: 16px;
+  --container-padding-mobile: 12px;
+}
+
+$grid-desktop: 12;
+$grid-tablet: 8;
+$grid-phone: 4;
+
+$breakpoint-md: 991px; // 平板以下的起點
+$breakpoint-sm: 767px; // 手機以下的起點
+
+// 2. Container 基礎設定
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($grid-desktop, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+// 【第一套：預設桌機版 (col-*)】 -> 最大主導，共 12 欄
+@for $i from 1 through $grid-desktop {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+// 【第二套：平板斷點 (col-md-*)】 -> 進入 991px 以下觸發
+@media (max-width: $breakpoint-md) {
+  .grid {
+    grid-template-columns: repeat($grid-tablet, minmax(0, 1fr));
+  }
+
+  @for $i from 1 through $grid-tablet {
+    .col-md-#{$i} {
+      grid-column: span $i;
+    }
+  }
+
+  // 安全防護：如果 HTML 寫了 col-md-9 以上（超過平板的 8 欄），自動讓它滿版
+  @for $i from ($grid-tablet + 1) through $grid-desktop {
+    .col-md-#{$i} {
+      grid-column: span $grid-tablet;
+    }
+  }
+}
+
+// 【第三套：手機斷點 (col-sm-*)】 -> 進入 767px 以下觸發
+@media (max-width: $breakpoint-sm) {
+  .container {
+    padding-left: var(--container-padding-mobile);
+    padding-right: var(--container-padding-mobile);
+  }
+
+  .grid {
+    grid-template-columns: repeat($grid-phone, minmax(0, 1fr));
+  }
+
+  @for $i from 1 through $grid-phone {
+    .col-sm-#{$i} {
+      grid-column: span $i;
+    }
+  }
+
+  // 安全防護：如果 HTML 寫了 col-sm-5 以上（超過手機的 4 欄），自動讓它滿版
+  @for $i from ($grid-phone + 1) through $grid-desktop {
+    .col-sm-#{$i} {
+      grid-column: span $grid-phone;
+    }
+  }
+}
+
+// Display 顯示與隱藏工具類別
+
+// 【第一層：全域/桌機預設】
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+// 【第二層：平板斷點 (991px 以下)】
+@media (max-width: $breakpoint-md) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+}
+
+// 【第三層：手機斷點 (767px 以下)】
+@media (max-width: $breakpoint-sm) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+}

@@ -1,0 +1,54 @@
+.blog-list-vertical {
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+  }
+
+  .blog-card-vertical {
+    width: 100%;
+    max-width: 416px;
+
+    @media (max-width: 768px) {
+      flex-shrink: 0;
+      max-width: 260px;
+    }
+
+    .blog-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: color 0.3s ease;
+
+      @media (max-width: 992px) {
+        gap: 8px;
+      }
+
+      .blog-img {
+        overflow: hidden;
+
+        img {
+          transition: scale 0.3s ease;
+        }
+      }
+
+      p {
+        white-space: nowrap;
+      }
+
+      .material-symbols-outlined {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover {
+        color: var(--primary-900);
+
+        .blog-img img {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}

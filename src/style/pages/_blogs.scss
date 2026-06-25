@@ -1,0 +1,138 @@
+.blog-title {
+  overflow: clip;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_banner.png?raw=true");
+  background-color: var(--dark-40);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 0px;
+}
+
+.blog-display {
+  position: absolute;
+  top: 37%;
+  opacity: 20%;
+  pointer-events: none;
+  @media (max-width: 992px) {
+    top: 55%;
+  }
+}
+
+.blog-menu {
+  max-width: 100%;
+  width: 196px;
+  padding-right: 24px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  li {
+    width: 100%;
+    padding: 0;
+  }
+
+  button {
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-size: var(--fs-heading-xxs);
+    font-weight: 700;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    background: transparent;
+    color: var(--dark-900, #333);
+
+    &.active {
+      background: var(--primary-900);
+      color: var(--neutral-0);
+    }
+
+    &:hover:not(.active) {
+      background: var(--primary-50, #f0f0f0);
+      color: var(--primary-900);
+    }
+  }
+
+  @media (max-width: 992px) {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 0px;
+    gap: 8px;
+
+    li {
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    button {
+      width: auto;
+      white-space: nowrap;
+      padding: 8px 16px;
+      font-size: var(--fs-heading-xxxs);
+    }
+  }
+}
+
+.blog-list-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.blog-card-horizontal {
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding-left: 24px;
+    transition: color 0.3s ease;
+  }
+
+  .card-hero {
+    max-width: 100%;
+    width: 526px;
+    height: 256px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      transition: scale 0.3s ease;
+    }
+  }
+
+  &:hover {
+    .blog-content h2 {
+      color: var(--primary-900);
+    }
+    img {
+      scale: 1.1;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .card-hero {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 8px;
+    }
+    .blog-content {
+      padding-left: 0px;
+    }
+  }
+}

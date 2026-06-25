@@ -1,0 +1,212 @@
+$spaces: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 24px,
+  6: 32px,
+  7: 40px,
+  8: 48px,
+  9: 60px,
+  10: 80px,
+  11: 96px,
+  12: 128px,
+  20: 20px,
+);
+
+$breakpoint-md: 991px; // 平板以下的起點
+$breakpoint-sm: 767px; // 手機以下的起點
+
+// ==========================================================================
+// 【第一層：預設桌機版工具（不加後綴，如 .mt-8）】 -> 放最上面，當作基礎保底
+// ==========================================================================
+@each $key, $value in $spaces {
+  .m-#{$key} {
+    margin: $value;
+  }
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .p-#{$key} {
+    padding: $value;
+  }
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .gap-#{$key} {
+    gap: $value;
+  }
+  .gap-x-#{$key} {
+    column-gap: $value;
+  }
+  .gap-y-#{$key} {
+    row-gap: $value;
+  }
+}
+
+// ==========================================================================
+// 【第二層：平板斷點工具（.mt-md-6）】 -> 寫在中間，進入 991px 以下時會蓋掉桌機
+// ==========================================================================
+@media (max-width: $breakpoint-md) {
+  @each $key, $value in $spaces {
+    .m-md-#{$key} {
+      margin: $value;
+    }
+    .mt-md-#{$key} {
+      margin-top: $value;
+    }
+    .mb-md-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-md-#{$key} {
+      margin-left: $value;
+    }
+    .mr-md-#{$key} {
+      margin-right: $value;
+    }
+    .mx-md-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-md-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+
+    .p-md-#{$key} {
+      padding: $value;
+    }
+    .pt-md-#{$key} {
+      padding-top: $value;
+    }
+    .pb-md-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-md-#{$key} {
+      padding-left: $value;
+    }
+    .pr-md-#{$key} {
+      padding-right: $value;
+    }
+    .px-md-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-md-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+
+    .gap-md-#{$key} {
+      gap: $value;
+    }
+    .gap-x-md-#{$key} {
+      column-gap: $value;
+    }
+    .gap-y-md-#{$key} {
+      row-gap: $value;
+    }
+  }
+}
+
+// ==========================================================================
+// 【第三層：手機斷點工具（.mt-sm-4）】 -> 放最下面，進入 767px 以下時權重最高、必勝！
+// ==========================================================================
+@media (max-width: $breakpoint-sm) {
+  @each $key, $value in $spaces {
+    .m-sm-#{$key} {
+      margin: $value;
+    }
+    .mt-sm-#{$key} {
+      margin-top: $value;
+    }
+    .mb-sm-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-sm-#{$key} {
+      margin-left: $value;
+    }
+    .mr-sm-#{$key} {
+      margin-right: $value;
+    }
+    .mx-sm-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-sm-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+
+    .p-sm-#{$key} {
+      padding: $value;
+    }
+    .pt-sm-#{$key} {
+      padding-top: $value;
+    }
+    .pb-sm-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-sm-#{$key} {
+      padding-left: $value;
+    }
+    .pr-sm-#{$key} {
+      padding-right: $value;
+    }
+    .px-sm-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-sm-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+
+    .gap-sm-#{$key} {
+      gap: $value;
+    }
+    .gap-x-sm-#{$key} {
+      column-gap: $value;
+    }
+    .gap-y-sm-#{$key} {
+      row-gap: $value;
+    }
+  }
+}

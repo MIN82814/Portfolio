@@ -1,0 +1,45 @@
+.pagination-section {
+  display: flex;
+  justify-content: end;
+
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+
+    &.active {
+      background-color: var(--neutral-900);
+      color: var(--neutral-0);
+    }
+
+    &.dots {
+      cursor: default;
+    }
+  }
+
+  .material-symbols-outlined {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

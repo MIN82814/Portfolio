@@ -1,0 +1,43 @@
+.projects-page {
+  .projects-title {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_banner.png?raw=true);
+    background-color: var(--dark-40);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .projects-list {
+    display: flex;
+    gap: 1px;
+
+    .project {
+      cursor: pointer;
+
+      padding: 12px 0px;
+      width: 100%;
+
+      text-align: center;
+
+      transition: all 0.3s ease;
+      &.active {
+        color: var(--neutral-0);
+        background-color: var(--primary-900);
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .projects-list {
+      overflow-x: scroll;
+
+      .project {
+        padding: 8px 12px;
+        width: auto;
+        min-width: 57px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
