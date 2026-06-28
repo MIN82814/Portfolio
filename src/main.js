@@ -25,12 +25,19 @@ if (document.querySelector(".blog-list-vertical")) {
   renderBlogsVertical(homeBlogs);
 }
 
-import { renderServiceMenu, renderServiceSteps, renderServiceCase, renderServiceQA } from "./js/page/servicePage";
+import {
+  renderServiceMenu,
+  renderServiceSteps,
+  renderServiceCase,
+  renderServiceQA,
+} from "./js/page/servicePage";
 
 if (document.querySelector(".service-page")) {
   renderServiceMenu();
 
-  const serviceCase = projectContent.filter((_, index) => [0, 1].includes(index));
+  const serviceCase = projectContent.filter((_, index) =>
+    [0, 1].includes(index),
+  );
   renderServiceCase(serviceCase);
 
   renderServiceQA();
@@ -42,11 +49,17 @@ if (document.querySelector(".projects-page")) {
   renderProjectsList();
   renderProjects(projectContent);
 }
-
+import { initTimeline } from "./js/components/timeline";
+if (document.querySelector(".timeline-container")) {
+  initTimeline();
+}
 import { renderBlogMenu } from "./js/page/blogsPage";
 import { renderBlogHorizontal } from "./js/components/blogsCard";
 
-if (document.querySelector(".blog-page") && !document.querySelector(".blog-detail")) {
+if (
+  document.querySelector(".blog-page") &&
+  !document.querySelector(".blog-detail")
+) {
   renderBlogMenu();
   renderBlogHorizontal();
 }

@@ -24,11 +24,10 @@
       }
     }
     p strong {
-     font-weight: 600;
-     color: var(--primary-700); 
+      font-weight: 700;
+      color: var(--neutral-700);
     }
   }
-
 
   @media (max-width: 992px) {
     .service-list {

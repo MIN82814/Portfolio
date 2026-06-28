@@ -3,7 +3,7 @@
   --primary-100: #fde6cf;
   --primary-500: #f5b87b;
   --primary-600: #ff8e1d;
-    --primary-700: #ad8853;
+  --primary-700: #ad8853;
   --primary-900: #24140b;
 
   --neutral-0: #ffffff;
@@ -13,6 +13,7 @@
 
   --dark-40: rgba(0, 0, 0, 0.4);
   --dark-60: rgba(0, 0, 0, 0.6);
+  --dark-70: rgba(0, 0, 0, 0.7);
 }
 
 *,
@@ -20,7 +21,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 0.02em;

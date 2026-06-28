@@ -2,10 +2,12 @@ export const projectContent = [
   {
     date: "Oct 16, 2025",
     dateAttr: "2025-10-16",
-    tag: ["React前端開發","網頁切版","視覺設計"],
-    title: "品牌視覺與電商整合，多肉植物品牌電商建置",
-    subtitle: "從品牌識別設計到 RWD 響應式網站開發，打造療癒系植栽購物體驗",
-    bgImg: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1.png?raw=true",
+    tag: ["React前端開發", "網頁切版", "視覺設計"],
+    title: "觀葉森活 電商專案",
+    subtitle:
+      "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
+    bgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1.png?raw=true",
     mobileBgImg:
       "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-mobile.png?raw=true",
     content: [
@@ -13,12 +15,15 @@ export const projectContent = [
         id: "project-001",
         heroImage:
           "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-hero.jpg?raw=true",
-        categories: ["React前端開發","網頁切版","視覺設計"],
+        categories: ["React前端開發", "網頁切版", "視覺設計"],
         title: "品牌視覺與電商整合，多肉植物品牌電商建置",
         subtitle: "從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗",
         description:
           "我們將大自然的平靜感轉化為數位語彙，透過揉合大地色系與極簡排版，為「PLANTIQUE LIFE」建構出專屬的視覺靈魂。在開發過程中，我們秉持對細節的極致追求，確保從品牌 Logo 到每一個組件的轉場，皆展現像素級的精準。",
-        details: ["設計原則：植栽藝術、日系風格、暖陽視覺", "開發方式：Bootstrap、Javascript"],
+        details: [
+          "設計原則：植栽藝術、日系風格、暖陽視覺",
+          "開發方式：Bootstrap、Javascript",
+        ],
         contentImages:
           "https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_modal_pic.png?raw=true",
       },
@@ -30,7 +35,8 @@ export const projectContent = [
     tag: ["網頁切版"],
     title: "數位產品 UI/UX 設計，個人化財務視覺化軟體",
     subtitle: "運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的個人化操作介面",
-    bgImg: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_2.png?raw=true",
+    bgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_2.png?raw=true",
     mobileBgImg:
       "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_2-mobile.png?raw=true",
     content: [
@@ -40,10 +46,14 @@ export const projectContent = [
           "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_2-hero.jpg?raw=true",
         categories: ["網頁切版"],
         title: "數位產品 UI/UX 設計，個人化財務視覺化軟體",
-        subtitle: "運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的個人化操作介面",
+        subtitle:
+          "運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的個人化操作介面",
         description:
           "我們結合人工智能與金融數據，打造直覺的視覺化界面。用戶可以一目了然地掌握個人財務狀況，透過即時分析和智能建議，做出更明智的投資決策。系統架構穩定、反應快速，為用戶提供無縫的金融管理體驗。",
-        details: ["設計原則：數據視覺化、使用者友善、即時互動", "開發方式：React、D3.js、API 集成"],
+        details: [
+          "設計原則：數據視覺化、使用者友善、即時互動",
+          "開發方式：React、D3.js、API 集成",
+        ],
         contentImages:
           "https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_modal_pic.png?raw=true",
       },
@@ -52,10 +62,11 @@ export const projectContent = [
   {
     date: "Oct 16, 2025",
     dateAttr: "2025-10-16",
-    tag: ["網頁切版","視覺設計"],
+    tag: ["網頁切版", "視覺設計"],
     title: "品牌識別與包裝設計，法式甜點品牌視覺重塑",
     subtitle: "以溫暖、輕盈的視覺語言，精準定位高質感甜點市場的品牌形象",
-    bgImg: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_3.png?raw=true",
+    bgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_3.png?raw=true",
     mobileBgImg:
       "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_3-mobile.png?raw=true",
     content: [
@@ -63,18 +74,20 @@ export const projectContent = [
         id: "project-003",
         heroImage:
           "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_3-hero.jpg?raw=true",
-        categories: ["網頁切版","視覺設計"],
+        categories: ["網頁切版", "視覺設計"],
         title: "品牌識別與包裝設計，法式甜點品牌視覺重塑",
         subtitle: "以溫暖、輕盈的視覺語言，精準定位高質感甜點市場的品牌形象",
         description:
           "我們為法式甜點品牌重新定義視覺形象，融合法式優雅與現代簡潔。從品牌 Logo 到包裝設計，每一個細節都精心打磨。前端頁面採用流暢的動畫效果，後端支持完整的訂單系統，為品牌打造從線上到線下的完整體驗。",
-        details: ["設計原則：法式優雅、温暖質感、高級簡約", "開發方式：HTML5、CSS3、Node.js、MongoDB"],
+        details: [
+          "設計原則：法式優雅、温暖質感、高級簡約",
+          "開發方式：HTML5、CSS3、Node.js、MongoDB",
+        ],
         contentImages:
           "https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_modal_pic.png?raw=true",
       },
     ],
   },
-  
 ];
 
 /**
@@ -148,7 +161,9 @@ function renderModalContent(project, rawData) {
     modalHero.alt = project.title;
   }
   if (breadcrumb && project.categories) {
-    breadcrumb.innerHTML = project.categories.map((cat) => `<li>${cat}</li>`).join("");
+    breadcrumb.innerHTML = project.categories
+      .map((cat) => `<li>${cat}</li>`)
+      .join("");
   }
   if (timeTag) {
     timeTag.setAttribute("datetime", rawData.dateAttr);
@@ -158,7 +173,9 @@ function renderModalContent(project, rawData) {
   if (subtitle) subtitle.textContent = project.subtitle || "";
   if (description) description.textContent = project.description || "";
   if (detailsList && project.details) {
-    detailsList.innerHTML = project.details.map((detail) => `<li>${detail}</li>`).join("");
+    detailsList.innerHTML = project.details
+      .map((detail) => `<li>${detail}</li>`)
+      .join("");
   }
   if (contentImg) {
     contentImg.src = project.contentImages || "";
@@ -172,7 +189,9 @@ export function renderProjects(data = projectContent) {
   const projectContainer = document.querySelector(".project-list");
   const modalPage = document.querySelector(".projectModal-page");
 
-  projectContainer.innerHTML = data.map((project, index) => createProjectTemplate(project, index)).join("");
+  projectContainer.innerHTML = data
+    .map((project, index) => createProjectTemplate(project, index))
+    .join("");
 
   if (modalPage) {
     initModalEvents(modalPage);
