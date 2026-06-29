@@ -11,7 +11,7 @@
   font-weight: 500;
   line-height: 1.5;
 
-  min-width: 113px;
+  min-width: 130px;
   padding: 12px 24px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -20,14 +20,22 @@
 
   @media (max-width: 991px) {
     font-size: var(--fs-label-sm);
-    padding: 12px 20px;
-    min-width: 97px;
+    padding: 8px 20px;
+    min-width: 100px;
   }
 }
 
 // 2. 主樣式按鈕
 .btn-primary {
   background-color: var(--primary-900);
+  color: var(--neutral-0);
+  &:hover {
+    background-color: var(--neutral-900);
+  }
+}
+.btn-primary-600 {
+  background-color: orange;
+  background-color: var(--primary-600);
   color: var(--neutral-0);
   &:hover {
     background-color: var(--neutral-900);

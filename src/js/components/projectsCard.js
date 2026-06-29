@@ -1,28 +1,45 @@
 export const projectContent = [
   {
-    id: "project-001", 
+    id: "project-001",
     date: "Mar, 2026",
     dateAttr: "2026-03",
     tag: ["React 前端開發", "團隊協作專案"],
     title: "觀葉森活 電商專案",
-    subtitle: "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
-    bgImg: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1.png?raw=true",
-    mobileBgImg: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-mobile.png?raw=true",
+    subtitle:
+      "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
+    bgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1.png?raw=true",
+    mobileBgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-mobile.png?raw=true",
     modal: {
-      heroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-hero.jpg?raw=true",
-      intro: "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
+      heroImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-hero.jpg?raw=true",
+      intro:
+        "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
       technologies: ["React", "Redux Toolkit", "Axios", "Bootstrap 5"],
       links: {
         github: "https://github.com/MIN82814/leafAndHome",
         demo: "https://min82814.github.io/leafAndHome/",
         responsiblePages: [
-          { name: "文章列表頁", url: "https://min82814.github.io/leafAndHome/#/articles" },
-          { name: "單一文章頁", url: "https://min82814.github.io/leafAndHome/#/articles/-OjFbN8au2K1LWeWt0Vp" }
+          {
+            name: "文章列表頁",
+            url: "https://min82814.github.io/leafAndHome/#/articles",
+          },
+          {
+            name: "單一文章頁",
+            url: "https://min82814.github.io/leafAndHome/#/articles/-OjFbN8au2K1LWeWt0Vp",
+          },
         ],
         videos: [
-          { title: "文章列表頁", url: "https://github.com/MIN82814/leafAndHome/blob/main/docs/article-list.gif" },
-          { title: "單一文章頁", url: "https://github.com/MIN82814/leafAndHome/blob/main/docs/article-detail.gif" }
-        ]
+          {
+            title: "文章列表頁",
+            url: "https://github.com/MIN82814/leafAndHome/blob/main/docs/article-list.gif",
+          },
+          {
+            title: "單一文章頁",
+            url: "https://github.com/MIN82814/leafAndHome/blob/main/docs/article-detail.gif",
+          },
+        ],
       },
       responsibilities: [
         "✦ 3 個文章前後台模組開發，包含文章列表頁、單篇文章頁與後台文章管理頁， RWD 介面設計與互動功能實作。",
@@ -31,11 +48,12 @@ export const projectContent = [
         "✦ 文章搜尋、標籤篩選與分頁功能，透過 React state 管理搜尋條件與頁碼，完成前端資料篩選、排序與分頁邏輯。",
         "✦ 整合 Mailchimp 電子報訂閱表單，完成第三方訂閱服務導入。",
         "✦ 開發 Loading 與 Pagination 共用元件，提升跨頁面重用性與維護效率。",
-        "✦ 與 4 人團隊協作，採用 Git Flow 策略與 Pull Request 進行開發，共同參與版本控管與功能整合流程。"
+        "✦ 與 4 人團隊協作，採用 Git Flow 策略與 Pull Request 進行開發，共同參與版本控管與功能整合流程。",
       ],
-      contentImages: "https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_modal_pic.png?raw=true"
-    }
-  }
+      contentImages:
+        "https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_modal_pic.png?raw=true",
+    },
+  },
 ];
 /**
  * 拆分 1：純元件樣版（Template）
@@ -105,14 +123,16 @@ function renderModalContent(project) {
   const linksContainer = document.querySelector(".modal-links");
   const pagesContainer = document.querySelector(".modal-pages-container");
   const videosListContainer = document.querySelector(".modal-videos-list");
-  const responsibilitiesList = document.querySelector(".modal-responsibilities");
+  const responsibilitiesList = document.querySelector(
+    ".modal-responsibilities",
+  );
   const contentImg = document.querySelector(".modal-content-img");
 
   // 2. 開始把 project 資料庫裡的食材，一一填入空格
-  
+
   // 填大圖的網址與替代文字
   if (modalHero) {
-    modalHero.src = project.modal.heroImage; // 💡 結構變超好讀！直接點 modal 
+    modalHero.src = project.modal.heroImage; // 💡 結構變超好讀！直接點 modal
     modalHero.alt = project.title;
   }
 
@@ -138,15 +158,15 @@ function renderModalContent(project) {
   if (linksContainer && project.modal.links) {
     let linksHtml = "";
     if (project.modal.links.github) {
-      linksHtml += `<a href="${project.modal.links.github}" target="_blank" class="me-3">專案連結 github &gt;&gt;</a>`;
+      linksHtml += `<a href="${project.modal.links.github}" target="_blank" class="btn btn-primary-600 fs-md-label-sm">專案連結</a>`;
     }
     if (project.modal.links.demo) {
-      linksHtml += `<a href="${project.modal.links.demo}" target="_blank">專案 Demo &gt;&gt;</a>`;
+      linksHtml += `<a href="${project.modal.links.demo}" target="_blank" class="btn btn-primary-600 fs-md-label-sm">專案 Demo</a>`;
     }
     linksContainer.innerHTML = linksHtml; // 塞進 HTML
   }
-//負責專案連結
-//開始動態渲染負責頁面按鈕
+  //負責專案連結
+  //開始動態渲染負責頁面按鈕
   if (pagesContainer) {
     // 💡 安全檢查：確保資料裡有寫 responsiblePages 陣列才跑迴圈
     if (project.modal.links && project.modal.links.responsiblePages) {
@@ -155,18 +175,16 @@ function renderModalContent(project) {
           // 迴圈把每個頁面的名字跟網址拿出來，做成精緻的按鈕 HTML
           return `<a href="${page.url}" target="_blank" class="btn btn-neutral fs-md-label-sm">${page.name}</a>`;
         })
-        .join(""); 
-
+        .join("");
     } else {
       pagesContainer.innerHTML = "";
     }
   }
-// 判斷並使用迴圈渲染多部 GIF 動態圖
+  // 判斷並使用迴圈渲染多部 GIF 動態圖
   if (videosListContainer) {
     const projectVideos = project.modal.links?.videos;
 
     if (projectVideos && projectVideos.length > 0) {
-      
       videosListContainer.innerHTML = projectVideos
         .map((video) => {
           // 💡 關鍵魔改：把原本的網址自動把 blob 替換成 raw
@@ -188,7 +206,6 @@ function renderModalContent(project) {
           `;
         })
         .join("");
-
     } else {
       videosListContainer.innerHTML = "";
     }
@@ -233,7 +250,6 @@ export function renderProjects(data = projectContent) {
 
       // 💡 修正後的新邏輯：只要有找到專案，而且畫面上存在彈窗
       if (targetProject && modalPage) {
-        
         // 💡 1. 廚師填空：直接把整包乾淨的專案資料丟進去
         renderModalContent(targetProject);
 
