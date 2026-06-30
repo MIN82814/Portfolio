@@ -83,7 +83,9 @@
 .align-self-center {
   align-self: center;
 }
-
+.text-align-center{
+  text-align: center;
+}
 // 1. 全域尺寸變數
 :root {
   --grid-gap: 24px;

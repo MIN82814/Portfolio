@@ -14,12 +14,9 @@
 
     .project {
       cursor: pointer;
-
       padding: 12px 0px;
       width: 100%;
-
       text-align: center;
-
       transition: all 0.3s ease;
       &.active {
         color: var(--neutral-0);

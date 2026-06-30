@@ -3,25 +3,28 @@ export const projectContent = [
     id: "project-001",
     date: "Mar, 2026",
     dateAttr: "2026-03",
-    tag: ["React 前端開發", "團隊協作專案"],
+    tag: ["React前端開發", "網頁切版", "UI 設計與規劃"],
     title: "觀葉森活 電商專案",
     subtitle:
       "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
     bgImg:
-      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1.png?raw=true",
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_hero.png?raw=true",
     mobileBgImg:
-      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-mobile.png?raw=true",
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_mobileHero.png?raw=true",
     modal: {
       heroImage:
-        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/project_1-hero.jpg?raw=true",
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_hero.jpg?raw=true",
+        mobileHeroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_mobileHero.png?raw=true",
+      introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_introduce.jpg?raw=true",
       intro:
         "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
-      technologies: ["React", "Redux Toolkit", "Axios", "Bootstrap 5"],
+        technologies: ["React", "React Route", "Redux Toolkit", "Axios", "Bootstrap 5", "Git / GitHub"],
       links: {
         github: "https://github.com/MIN82814/leafAndHome",
         demo: "https://min82814.github.io/leafAndHome/",
         responsiblePages: [
-          {
+       
+ {
             name: "文章列表頁",
             url: "https://min82814.github.io/leafAndHome/#/articles",
           },
@@ -29,20 +32,11 @@ export const projectContent = [
             name: "單一文章頁",
             url: "https://min82814.github.io/leafAndHome/#/articles/-OjFbN8au2K1LWeWt0Vp",
           },
+
         ],
-        videos: [
-          {
-            title: "文章列表頁",
-            url: "https://github.com/MIN82814/leafAndHome/blob/main/docs/article-list.gif",
-          },
-          {
-            title: "單一文章頁",
-            url: "https://github.com/MIN82814/leafAndHome/blob/main/docs/article-detail.gif",
-          },
-        ],
-      },
+            },
       responsibilities: [
-        "✦ 3 個文章前後台模組開發，包含文章列表頁、單篇文章頁與後台文章管理頁， RWD 介面設計與互動功能實作。",
+     "✦ 3 個文章前後台模組開發，包含文章列表頁、單篇文章頁與後台文章管理頁， RWD 介面設計與互動功能實作。",
         "✦ 串接 8 支文章模組 RESTful API，透過 API service 模組化管理前台文章資料、後台 CRUD 與圖片上傳流程，並負責 API 回傳資料整合與畫面呈現。",
         "✦ 採用 React 元件化開發模式，將文章頁拆分為 Hero、文章內容、相關商品、相關文章、電子報與留言等功能元件，提升結構清晰度與維護性。",
         "✦ 文章搜尋、標籤篩選與分頁功能，透過 React state 管理搜尋條件與頁碼，完成前端資料篩選、排序與分頁邏輯。",
@@ -50,8 +44,119 @@ export const projectContent = [
         "✦ 開發 Loading 與 Pagination 共用元件，提升跨頁面重用性與維護效率。",
         "✦ 與 4 人團隊協作，採用 Git Flow 策略與 Pull Request 進行開發，共同參與版本控管與功能整合流程。",
       ],
-      contentImages:
-        "https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_modal_pic.png?raw=true",
+      contentImages: [
+        {
+          title: "單一文章頁 完整版面展示",
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_detail-demo.png?raw=true"
+        },
+        {
+          title: "文章列表頁 完整版面展示",
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_list-demo.png?raw=true"
+        }
+      ]
+    },
+  },
+    {
+    id: "project-002",
+    date: "Sep, 2025",
+    dateAttr: "2025-09",
+    tag: ["網頁切版"],
+    title: "CASHU 記帳 App",
+    subtitle:
+      "與 AAPD UI 設計團隊協作開發行動端記帳 App，參與 UI 設計溝通、Figma 設計稿交接與前端介面實作，專案著重行動端操作體驗、介面一致性與元件化開發流程。",
+    bgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_hero.png?raw=true",
+    mobileBgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_mobileHero.png?raw=true",
+    modal: {
+      heroImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_hero.jpg?raw=true",
+        mobileHeroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_mobileHero.png?raw=true",
+      introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_introduce.jpg?raw=true",
+      intro:
+        "與 AAPD UI 設計團隊協作開發行動端記帳 App，參與 UI 設計溝通、Figma 設計稿交接與前端介面實作，專案著重行動端操作體驗、介面一致性與元件化開發流程。",
+        technologies: ["HTML", "SCSS", "Bootstrap 5", "Git / GitHub", "SVG"],
+      links: {
+
+ github: "https://github.com/MIN82814/CASHU",
+        demo: "https://min82814.github.io/CASHU/",
+        responsiblePages: [
+           {
+            name: "新增紀錄",
+            url: "https://min82814.github.io/CASHU/log-add.html",
+          },
+          {
+            name: "存錢計畫",
+            url: "https://min82814.github.io/CASHU/plan-save-detail.html",
+          },
+        ],
+             },
+      responsibilities: [
+        "✦ 行動端介面切版與流程實作<br>CASHU 記帳 App「新增紀錄」與「存錢計畫」兩大核心流程開發，完成 7 個行動端頁面的切版與互動介面整合，依據 Figma 設計稿完成 375px 行動端介面呈現。",
+        "✦ SCSS 架構規劃與共用樣式開發<br>規劃 SCSS 模組化架構，建立底部導覽列、手機外框與共用 UI 樣式，提升樣式一致性與維護性。",
+        "✦ 模板整合與版型維護<br>採用 Vite 建置多頁式專案，整合 EJS 共用模板管理 Header／Footer，協助團隊維持跨頁面版型一致性與開發效率。",
+        "✦ Bootstrap 客製化與介面整合<br>客製 Bootstrap SCSS 變數與 utilities，整合 Tab、Offcanvas 等互動元件，並搭配 SVG、Lucide Icons 與 Icon Font 提升介面辨識性與視覺一致性。",
+        "✦ 跨職能協作與版本控管<br>與 UI 設計師討論介面細節與實作可行性，並與 2 人團隊協作採 Git Flow 與 Pull Request 協作開發及負責功能整合。",
+      ],
+      contentImages: [
+        {
+          title: "新增紀錄及存錢計畫頁面 完整版面展示",
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU-demo.png?raw=true"
+        },
+             ]
+    },
+  },
+  {
+    id: "project-003",
+    date: "Sep, 2025",
+    dateAttr: "2025-09",
+    tag: ["網頁切版", "UI 設計與規劃"],
+    title: "Happiness Cookie 甜點電商",
+    subtitle:
+      "以手工餅乾品牌為主題的多頁式電商網站切版專案，採用 EJS 模板與 SCSS 架構化開發，完成首頁、商品列表、商品詳細頁、購物車、結帳頁與會員中心等介面實作。專案著重於版面規劃、元件拆分、RWD 響應式設計與團隊協作開發流程。",
+    bgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_hero.png?raw=true",
+    mobileBgImg:
+      "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_mobileHero.png?raw=true",
+    modal: {
+      heroImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_hero.jpg?raw=true",
+        mobileHeroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_mobileHero.png?raw=true",
+      introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_introduce.jpg?raw=true",
+      intro:
+        "以手工餅乾品牌為主題的多頁式電商網站切版專案，採用 EJS 模板與 SCSS 架構化開發，完成首頁、商品列表、商品詳細頁、購物車、結帳頁與會員中心等介面實作。專案著重於版面規劃、元件拆分、RWD 響應式設計與團隊協作開發流程。",
+  technologies: ["HTML", "SCSS", "Bootstrap 5", "EJS", "Vite", "Git / GitHub"],
+      links: {
+
+ github: "https://github.com/MIN82814/Happinesscookie",
+        demo: "https://min82814.github.io/Happinesscookie/",
+        responsiblePages: [
+           {
+            name: "首頁",
+            url: "https://min82814.github.io/Happinesscookie/",
+          },
+          {
+            name: "產品詳細頁",
+            url: "https://min82814.github.io/Happinesscookie/product.html",
+          },
+        ],
+             },
+      responsibilities: [
+         "✦ 商品詳細頁 UI 規劃與開發<br>獨立規劃商品詳細頁資訊架構與版面設計，進行 RWD 響應式切版，提升跨裝置瀏覽體驗。",
+        "✦ 互動元件開發<br>製作商品圖片輪播與顧客評價輪播功能，並整合側邊購物車（Offcanvas）介面與加入購物車後的互動效果，強化購物流程的操作體驗。",
+        "✦ 共用元件與樣式管理<br>建立共用按鈕元件與 hover／active 互動效果，運用 SCSS 架構化管理樣式，提升介面一致性與後續維護效率。",
+        "✦ 模板整合與團隊協作<br>參與首頁共同開發整合，與 5 人團隊採用 Git Flow 策略與 Pull Request 進行開發，共同參與版本控管與功能整合流程。",
+      ],
+      contentImages: [
+        {
+          title: "首頁頁面 完整版面展示",
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie-demo.png?raw=true"
+        },
+{
+          title: "產品詳細頁面 完整版面展示",
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_detail-demo.png?raw=true"
+        },
+             ]
     },
   },
 ];
@@ -111,10 +216,10 @@ function initModalEvents(modalPage) {
 /**
  * 核心 3：精準更新 Modal 的內容
  */
-// 💡 這個函式只專心拿「一筆專案的資料」來填空
 function renderModalContent(project) {
-  // 1. 伸手去 HTML 裡面，把剛剛準備好的空格子通通抓出來
   const modalHero = document.querySelector(".modal-hero");
+  const modalHeroMobile = document.querySelector(".modal-hero-mobile");
+  const introImg = document.querySelector(".modal-intro-img");
   const techTagsList = document.querySelector(".modal-tech-tags");
   const timeTag = document.querySelector(".modal-time");
   const title = document.querySelector(".modal-title");
@@ -126,14 +231,19 @@ function renderModalContent(project) {
   const responsibilitiesList = document.querySelector(
     ".modal-responsibilities",
   );
-  const contentImg = document.querySelector(".modal-content-img");
+const contentGallery = document.querySelector(".modal-content-gallery");
 
-  // 2. 開始把 project 資料庫裡的食材，一一填入空格
-
+ 
   // 填大圖的網址與替代文字
   if (modalHero) {
-    modalHero.src = project.modal.heroImage; // 💡 結構變超好讀！直接點 modal
+    modalHero.src = project.modal.heroImage; 
     modalHero.alt = project.title;
+  }
+  
+  if (modalHeroMobile) {
+    // 💡 填入手機版的圖片網址（注意：source 標籤要改的是 srcset 屬性！）
+    // 如果資料裡忘記寫手機版大圖，就用桌機版頂替（|| 預防機制）
+    modalHeroMobile.setAttribute("srcset", project.modal.mobileHeroImage || project.modal.heroImage);
   }
 
   // 填時間
@@ -147,7 +257,18 @@ function renderModalContent(project) {
   if (subtitle) subtitle.textContent = project.subtitle;
   if (introText) introText.textContent = project.modal.intro;
 
-  // 填技術標籤 (使用你最拿手的 .map 和 .join)
+  // 處理專案介紹圖片填空
+  if (introImg) {
+    if (project.modal.introImage) {
+      // 如果資料有寫網址，就把網址塞進去，並確保它顯示（以防之前被隱藏了）
+      introImg.src = project.modal.introImage;
+      introImg.style.display = "block";
+    } else {
+      // 預防機制：萬一以後有些專案在這邊不想放圖，直接隱藏它，畫面才不會破版
+      introImg.style.display = "none";
+    }
+  }
+  // 填技術標籤
   if (techTagsList && project.modal.technologies) {
     techTagsList.innerHTML = project.modal.technologies
       .map((tech) => `<li>${tech}</li>`)
@@ -217,9 +338,37 @@ function renderModalContent(project) {
       .join("");
   }
 
-  // 填底部細節大圖
-  if (contentImg) {
-    contentImg.src = project.modal.contentImages;
+ // 底部網頁完整大圖
+  if (contentGallery) {
+    const imagesArray = project.modal.contentImages;
+
+    if (imagesArray && imagesArray.length > 0) {
+      
+      contentGallery.innerHTML = imagesArray
+        .map((imgObj) => {
+          // 💡 貼心防呆：萬一以後有舊專案還是寫舊的字串網址，我們做個相容性判斷
+          const isObject = typeof imgObj === "object";
+          const title = isObject ? imgObj.title : "頁面版面展示";
+          const url = isObject ? imgObj.url : imgObj;
+
+          return `
+            <div class="gallery-item">
+              <h4 class="text-primary-900 mb-3 fs-heading-xxs text-align-center">${title}</h4>
+              
+              <img 
+                src="${url}" 
+                alt="${title}" 
+                class="img-fluid w-100 mb-4" 
+                loading="lazy"
+              />
+            </div>
+          `;
+        })
+        .join("");
+
+    } else {
+      contentGallery.innerHTML = "";
+    }
   }
 }
 /**

@@ -1,6 +1,7 @@
 :root {
   --primary-50: #fdf7f1;
-  --primary-100: #fde6cf;
+  --primary-100: #ffdebe;
+  --primary-200: #ffecda;
   --primary-500: #f5b87b;
   --primary-600: #ff8e1d;
   --primary-700: #ad8853;
@@ -23,6 +24,7 @@
 }
 html {
   scroll-behavior: smooth;
+ 
 }
 body {
   font-family: "Noto Sans", sans-serif;

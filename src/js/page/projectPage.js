@@ -1,6 +1,6 @@
 import { renderProjects, projectContent } from "../components/projectsCard";
 
-const projectsMenuContent = ["全部", "React前端開發", "網頁切版", "視覺設計", ];
+const projectsMenuContent = ["全部", "React前端開發", "網頁切版", "UI 設計與規劃", ];
 
 function createProjectsMenuHTML(menuContent) {
   return menuContent
