@@ -31,7 +31,7 @@
 .hero {
   overflow-x: clip;
   position: relative; // 確保定位基準正確
-  min-height: 800px;
+  min-height: 640px;
   .hero-img {
     width: 100%;
     height: auto;
@@ -74,8 +74,8 @@
   }
 
   .decora-4 {
-    top: 85%;
-    left: 35%;
+    top: 78%;
+    left: 38%;
     animation-name: floating;
     animation-duration: 3.8s;
     animation-delay: 0.2s;
