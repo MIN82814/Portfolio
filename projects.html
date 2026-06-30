@@ -2,15 +2,9 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/aos@next/dist/aos.css"
-    />
-    <title>Blog 部落格 | Nelson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Projects 專案作品 | Nelson</title>
     <script type="module" crossorigin src="/MIN82814/assets/main-kBkth_BM.js"></script>
     <link rel="stylesheet" crossorigin href="/MIN82814/assets/main-Bc_JS5NJ.css">
   </head>
@@ -56,42 +50,101 @@
 
     <div class="header-overlay"></div>
 
-    <main class="blog-page">
-      <section class="blog-title py-10 py-md-7 relative">
-        <div
-          data-aos="fade-down"
-          class="container text-neutral-0 text-center"
-        >
-          <h1 class="fs-heading-xxxl fs-md-heading-xl mb-2 mb-md-0">BLOGS</h1>
-          <p class="fs-heading-xxl fs-md-heading-xl">部落格</p>
+    <main class="projects-page">
+      <section class="projects-title py-10 py-md-7">
+        <div data-aos="fade-down" class="container text-neutral-0 text-center">
+          <h1 class="fs-heading-xxxl fs-md-heading-xl mb-2 mb-md-0">
+            PROJECTS
+          </h1>
+          <p class="fs-heading-xxl fs-md-heading-xl">專案作品</p>
         </div>
-        <h2 class="blog-display fs-display-1 fs-md-display-2 text-primary-50">BLOG</h2>
       </section>
 
-      <section class="blogs-container py-10 py-md-7">
+      <section class="projects-menu py-7 py-md-5">
         <div class="container">
-          <div class="d-flex flex-md-column gap-5 mb-10">
-            <ul class="blog-menu"></ul>
-            <ul class="blog-list-horizontal"></ul>
-          </div>
-          <div class="pagination-section">
-            <ul class="pagination fs-para-md fs-md-para-sm">
-              <li><span class="material-symbols-outlined">keyboard_arrow_left</span></li>
+          <ul class="projects-list fs-heading-xxs fs-md-heading-xxxs"></ul>
+        </div>
+      </section>
 
-              <li class="page active">1</li>
-              <li class="page">2</li>
-              <li class="page">3</li>
+      <section class="projects-list">
+        <div class="container pb-10 pb-md-7">
+          <ul class="project-list mb-7 mb-md-5"></ul>
+<div class="d-flex justify-content-center"></div>
 
-              <li class="dots">...</li>
-
-              <li class="page">20</li>
-
-              <li><span class="material-symbols-outlined">keyboard_arrow_right</span></li>
-            </ul>
-          </div>
         </div>
       </section>
     </main>
+
+    <!-- modal -->
+    <main class="projectModal-page">
+  <div class="modal-overlay"></div>
+
+  <div class="projectModal">
+    <header class="modal-header">
+      <button class="modal-close" type="button">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </header>
+
+    <div class="modal-body">
+      <picture class="modal-hero-wrapper">
+        <source
+          media="(max-width: 767px)"
+          srcset=""
+          class="modal-hero-mobile"
+        />
+
+        <img src="" alt="" class="modal-hero" />
+      </picture>
+
+      <div class="modal-text">
+        <div
+          class="d-flex flex-md-column-reverse justify-content-between align-items-center mb-2"
+        >
+          <ul
+            class="modal-tech-tags breadcrumb d-flex flex-wrap gap-1 justify-content-center"
+          ></ul>
+          <time class="modal-time text-neutral-500" datetime=""></time>
+        </div>
+
+        <div
+          class="d-flex flex-md-column justify-content-between align-items-center mb-4"
+        >
+          <h2 class="modal-title fs-heading-md fs-md-heading-sm mb-md-3"></h2>
+          <div class="modal-links d-flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="mb-4">
+          <div class="grid gap-md-0">
+            <div class="col-5 col-md-8 col-sm-4">
+              <div class="modal-intro mb-4">
+                <img
+                  src=""
+                  alt="專案介紹圖"
+                  class="modal-intro-img img-fluid rounded mb-3 shadow-sm"
+                />
+                <h5 class="fs-heading-xxxs mb-2">專案介紹</h5>
+                <p class="modal-intro-text"></p>
+              </div>
+            </div>
+            <div class="col-7 col-md-8 col-sm-4">
+              <h3 class="fs-heading-xxxs mb-2 text-primary-600">負責內容</h3>
+              <ul class="modal-responsibilities ps-4"></ul>
+              <div
+                class="modal-pages-container mb-3 d-flex flex-wrap gap-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-content-gallery d-flex flex-column gap-7"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
 
     <!-- footer -->
     <footer id="contact" class="bg-primary-900">
@@ -163,6 +216,7 @@
 
 
     <!-- js -->
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
