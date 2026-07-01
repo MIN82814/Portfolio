@@ -63,7 +63,7 @@ export const serviceCardContent = [
     ],
   },
   {
-    zhTitle: "設計工具與開發流程",
+    zhTitle: "設計工具/開發流程",
     iconName: "format_color_fill",
     skills: [
       {
@@ -104,7 +104,7 @@ export function serviceCard() {
         data-aos="fade-right"
         data-aos-delay="${index * 100}"
     >
-      <a href="${item.link}" class="p-5 p-md-3">
+      <div class="p-5 p-md-3">
         <div class="d-flex justify-content-between mb-4 mb-md-2">
           <div>
             <h4 class="fs-heading-md fs-md-heading-sm">${item.zhTitle}</h4>
@@ -133,7 +133,7 @@ export function serviceCard() {
      }
         </div>
 
-      </a>
+      </div>
     </li>
   `,
     )
