@@ -58,7 +58,7 @@
 .content::before {
   content: "";
   position: absolute;
-  left: 47px;
+  left: 15px;
   top: 10px;
   bottom: 0;
   width: 1px;
@@ -69,14 +69,14 @@
 /* 2. 移除 section 原本的 border-left */
 .timeline-section {
   position: relative;
-  padding-left: 50px;
+  padding-left: 30px;
   margin-bottom: 60px;
 }
 
 /* 3. 點點精準定位 (保持不變) */
 .dot {
   position: absolute;
-  left: 20px;
+  left: -12px;
   top: 5px;
   width: 15px;
   height: 15px;
@@ -86,7 +86,6 @@
   transition: 0.3s;
 }
 
-/* --- 新增：確保標籤與公司名稱變色的樣式 --- */
 
 /* 預設顏色 (灰色) */
 .date-tag {
@@ -98,7 +97,6 @@
   margin-bottom: 8px;
 }
 
-/* --- 互動變色狀態 (橘色) --- */
 
 /* 當父層 timeline-section 被觸發時，連動所有子元素變色 */
 .timeline-section.active .dot,
@@ -131,4 +129,22 @@
   min-width: 135px;
   cursor: pointer;
   text-align: center;
+}
+@media (max-width: 768px) {
+  /* 1. 父容器與線條 (保持不變) */
+.content {
+  padding-left: 20px;
+}
+
+.content::before {
+  content: "";
+  left: 20px;
+}
+.timeline-section {
+  padding-left: 30px;
+}
+.dot {
+  left: -7.5px;
+}
+
 }

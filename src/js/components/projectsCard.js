@@ -18,7 +18,7 @@ export const projectContent = [
       introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_introduce.jpg?raw=true",
       intro:
         "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
-        technologies: ["React", "React Route", "Redux Toolkit", "Axios", "Bootstrap 5", "Git / GitHub"],
+        technologies: ["React", "React Route" , "Vite" , "Axios", "Bootstrap 5", "Git / GitHub"],
       links: {
         github: "https://github.com/MIN82814/leafAndHome",
         demo: "https://min82814.github.io/leafAndHome/",
@@ -125,7 +125,7 @@ export const projectContent = [
       introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_introduce.jpg?raw=true",
       intro:
         "以手工餅乾品牌為主題的多頁式電商網站切版專案，採用 EJS 模板與 SCSS 架構化開發，完成首頁、商品列表、商品詳細頁、購物車、結帳頁與會員中心等介面實作。專案著重於版面規劃、元件拆分、RWD 響應式設計與團隊協作開發流程。",
-  technologies: ["HTML", "SCSS", "Bootstrap 5", "EJS", "Vite", "Git / GitHub"],
+  technologies: ["HTML", "SCSS", "Bootstrap 5", "Vite", "Git / GitHub"],
       links: {
 
  github: "https://github.com/MIN82814/Happinesscookie",
@@ -142,7 +142,7 @@ export const projectContent = [
         ],
              },
       responsibilities: [
-         "✦ 商品詳細頁 UI 規劃與開發<br>獨立規劃商品詳細頁資訊架構與版面設計，進行 RWD 響應式切版，提升跨裝置瀏覽體驗。",
+        "✦ 商品詳細頁 UI 規劃與開發<br>獨立規劃商品詳細頁資訊架構與版面設計，進行 RWD 響應式切版，提升跨裝置瀏覽體驗。",
         "✦ 互動元件開發<br>製作商品圖片輪播與顧客評價輪播功能，並整合側邊購物車（Offcanvas）介面與加入購物車後的互動效果，強化購物流程的操作體驗。",
         "✦ 共用元件與樣式管理<br>建立共用按鈕元件與 hover／active 互動效果，運用 SCSS 架構化管理樣式，提升介面一致性與後續維護效率。",
         "✦ 模板整合與團隊協作<br>參與首頁共同開發整合，與 5 人團隊採用 Git Flow 策略與 Pull Request 進行開發，共同參與版本控管與功能整合流程。",
