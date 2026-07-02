@@ -169,7 +169,7 @@ img {
   height: auto;
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .material-symbols-outlined {
@@ -565,7 +565,7 @@ img {
 
 .gap-x-0 {
   -moz-column-gap: 0;
-       column-gap: 0;
+  column-gap: 0;
 }
 
 .gap-y-0 {
@@ -638,7 +638,7 @@ img {
 
 .gap-x-1 {
   -moz-column-gap: 4px;
-       column-gap: 4px;
+  column-gap: 4px;
 }
 
 .gap-y-1 {
@@ -711,7 +711,7 @@ img {
 
 .gap-x-2 {
   -moz-column-gap: 8px;
-       column-gap: 8px;
+  column-gap: 8px;
 }
 
 .gap-y-2 {
@@ -784,7 +784,7 @@ img {
 
 .gap-x-3 {
   -moz-column-gap: 12px;
-       column-gap: 12px;
+  column-gap: 12px;
 }
 
 .gap-y-3 {
@@ -857,7 +857,7 @@ img {
 
 .gap-x-4 {
   -moz-column-gap: 16px;
-       column-gap: 16px;
+  column-gap: 16px;
 }
 
 .gap-y-4 {
@@ -930,7 +930,7 @@ img {
 
 .gap-x-5 {
   -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 
 .gap-y-5 {
@@ -1003,7 +1003,7 @@ img {
 
 .gap-x-6 {
   -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 
 .gap-y-6 {
@@ -1076,7 +1076,7 @@ img {
 
 .gap-x-7 {
   -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 
 .gap-y-7 {
@@ -1149,7 +1149,7 @@ img {
 
 .gap-x-8 {
   -moz-column-gap: 48px;
-       column-gap: 48px;
+  column-gap: 48px;
 }
 
 .gap-y-8 {
@@ -1222,7 +1222,7 @@ img {
 
 .gap-x-9 {
   -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
 }
 
 .gap-y-9 {
@@ -1295,7 +1295,7 @@ img {
 
 .gap-x-10 {
   -moz-column-gap: 80px;
-       column-gap: 80px;
+  column-gap: 80px;
 }
 
 .gap-y-10 {
@@ -1368,7 +1368,7 @@ img {
 
 .gap-x-11 {
   -moz-column-gap: 96px;
-       column-gap: 96px;
+  column-gap: 96px;
 }
 
 .gap-y-11 {
@@ -1441,7 +1441,7 @@ img {
 
 .gap-x-12 {
   -moz-column-gap: 128px;
-       column-gap: 128px;
+  column-gap: 128px;
 }
 
 .gap-y-12 {
@@ -1500,7 +1500,7 @@ img {
   }
   .gap-x-md-0 {
     -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   .gap-y-md-0 {
     row-gap: 0;
@@ -1556,7 +1556,7 @@ img {
   }
   .gap-x-md-1 {
     -moz-column-gap: 4px;
-         column-gap: 4px;
+    column-gap: 4px;
   }
   .gap-y-md-1 {
     row-gap: 4px;
@@ -1612,7 +1612,7 @@ img {
   }
   .gap-x-md-2 {
     -moz-column-gap: 8px;
-         column-gap: 8px;
+    column-gap: 8px;
   }
   .gap-y-md-2 {
     row-gap: 8px;
@@ -1668,7 +1668,7 @@ img {
   }
   .gap-x-md-3 {
     -moz-column-gap: 12px;
-         column-gap: 12px;
+    column-gap: 12px;
   }
   .gap-y-md-3 {
     row-gap: 12px;
@@ -1724,7 +1724,7 @@ img {
   }
   .gap-x-md-4 {
     -moz-column-gap: 16px;
-         column-gap: 16px;
+    column-gap: 16px;
   }
   .gap-y-md-4 {
     row-gap: 16px;
@@ -1780,7 +1780,7 @@ img {
   }
   .gap-x-md-5 {
     -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
   }
   .gap-y-md-5 {
     row-gap: 24px;
@@ -1836,7 +1836,7 @@ img {
   }
   .gap-x-md-6 {
     -moz-column-gap: 32px;
-         column-gap: 32px;
+    column-gap: 32px;
   }
   .gap-y-md-6 {
     row-gap: 32px;
@@ -1892,7 +1892,7 @@ img {
   }
   .gap-x-md-7 {
     -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
   }
   .gap-y-md-7 {
     row-gap: 40px;
@@ -1948,7 +1948,7 @@ img {
   }
   .gap-x-md-8 {
     -moz-column-gap: 48px;
-         column-gap: 48px;
+    column-gap: 48px;
   }
   .gap-y-md-8 {
     row-gap: 48px;
@@ -2004,7 +2004,7 @@ img {
   }
   .gap-x-md-9 {
     -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
   }
   .gap-y-md-9 {
     row-gap: 60px;
@@ -2060,7 +2060,7 @@ img {
   }
   .gap-x-md-10 {
     -moz-column-gap: 80px;
-         column-gap: 80px;
+    column-gap: 80px;
   }
   .gap-y-md-10 {
     row-gap: 80px;
@@ -2116,7 +2116,7 @@ img {
   }
   .gap-x-md-11 {
     -moz-column-gap: 96px;
-         column-gap: 96px;
+    column-gap: 96px;
   }
   .gap-y-md-11 {
     row-gap: 96px;
@@ -2172,7 +2172,7 @@ img {
   }
   .gap-x-md-12 {
     -moz-column-gap: 128px;
-         column-gap: 128px;
+    column-gap: 128px;
   }
   .gap-y-md-12 {
     row-gap: 128px;
@@ -2230,7 +2230,7 @@ img {
   }
   .gap-x-sm-0 {
     -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   .gap-y-sm-0 {
     row-gap: 0;
@@ -2286,7 +2286,7 @@ img {
   }
   .gap-x-sm-1 {
     -moz-column-gap: 4px;
-         column-gap: 4px;
+    column-gap: 4px;
   }
   .gap-y-sm-1 {
     row-gap: 4px;
@@ -2342,7 +2342,7 @@ img {
   }
   .gap-x-sm-2 {
     -moz-column-gap: 8px;
-         column-gap: 8px;
+    column-gap: 8px;
   }
   .gap-y-sm-2 {
     row-gap: 8px;
@@ -2398,7 +2398,7 @@ img {
   }
   .gap-x-sm-3 {
     -moz-column-gap: 12px;
-         column-gap: 12px;
+    column-gap: 12px;
   }
   .gap-y-sm-3 {
     row-gap: 12px;
@@ -2454,7 +2454,7 @@ img {
   }
   .gap-x-sm-4 {
     -moz-column-gap: 16px;
-         column-gap: 16px;
+    column-gap: 16px;
   }
   .gap-y-sm-4 {
     row-gap: 16px;
@@ -2510,7 +2510,7 @@ img {
   }
   .gap-x-sm-5 {
     -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
   }
   .gap-y-sm-5 {
     row-gap: 24px;
@@ -2566,7 +2566,7 @@ img {
   }
   .gap-x-sm-6 {
     -moz-column-gap: 32px;
-         column-gap: 32px;
+    column-gap: 32px;
   }
   .gap-y-sm-6 {
     row-gap: 32px;
@@ -2622,7 +2622,7 @@ img {
   }
   .gap-x-sm-7 {
     -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
   }
   .gap-y-sm-7 {
     row-gap: 40px;
@@ -2678,7 +2678,7 @@ img {
   }
   .gap-x-sm-8 {
     -moz-column-gap: 48px;
-         column-gap: 48px;
+    column-gap: 48px;
   }
   .gap-y-sm-8 {
     row-gap: 48px;
@@ -2734,7 +2734,7 @@ img {
   }
   .gap-x-sm-9 {
     -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
   }
   .gap-y-sm-9 {
     row-gap: 60px;
@@ -2790,7 +2790,7 @@ img {
   }
   .gap-x-sm-10 {
     -moz-column-gap: 80px;
-         column-gap: 80px;
+    column-gap: 80px;
   }
   .gap-y-sm-10 {
     row-gap: 80px;
@@ -2846,7 +2846,7 @@ img {
   }
   .gap-x-sm-11 {
     -moz-column-gap: 96px;
-         column-gap: 96px;
+    column-gap: 96px;
   }
   .gap-y-sm-11 {
     row-gap: 96px;
@@ -2902,7 +2902,7 @@ img {
   }
   .gap-x-sm-12 {
     -moz-column-gap: 128px;
-         column-gap: 128px;
+    column-gap: 128px;
   }
   .gap-y-sm-12 {
     row-gap: 128px;
@@ -3241,8 +3241,8 @@ img {
   transition: all 0.2s ease-in-out;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 @media (max-width: 991px) {
   .btn {
@@ -3333,12 +3333,14 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--dark-60);
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s;
   }
   .header-overlay.active {
     opacity: 1;
@@ -3358,7 +3360,9 @@ header {
     display: block;
     width: 100vw;
     background-color: var(--neutral-0);
-    transition: max-height 0.3s ease-out, visibility 0.3s;
+    transition:
+      max-height 0.3s ease-out,
+      visibility 0.3s;
   }
   .header-menu.active {
     visibility: visible;
@@ -3427,7 +3431,9 @@ footer .social-icon li {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 footer .social-icon li:hover {
   color: var(--primary-900);
@@ -3461,7 +3467,8 @@ footer .contact-form textarea {
   line-height: 1.5;
   color: var(--neutral-0);
 }
-footer .contact-form input::-moz-placeholder, footer .contact-form textarea::-moz-placeholder {
+footer .contact-form input::-moz-placeholder,
+footer .contact-form textarea::-moz-placeholder {
   color: var(--neutral-0);
 }
 footer .contact-form input::placeholder,
@@ -3602,7 +3609,7 @@ footer .contact-form .form-full {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .subscription .col-7 {
   display: flex;
@@ -3757,4 +3764,4 @@ footer .contact-form .form-full {
 .serviece-page .serviece-menu {
   padding: 30px;
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/service_banner.png");
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
