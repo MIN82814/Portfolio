@@ -14,8 +14,10 @@ export const projectContent = [
     modal: {
       heroImage:
         "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_hero.jpg?raw=true",
-        mobileHeroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_mobileHero.png?raw=true",
-      introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_introduce.jpg?raw=true",
+      mobileHeroImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_mobileHero.png?raw=true",
+      introImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_modal_introduce.jpg?raw=true",
       intro:
         "與團隊共同開發植物主題電商網站，提供商品瀏覽、購物流程、文章閱讀與會員管理等功能。專案採用 React 建立前後台系統，透過 RESTful API 串接資料，並以 Git Flow 進行團隊協作開發。",
         technologies: ["React", "React Route" , "Vite" , "Axios", "Bootstrap 5", "Git / GitHub"],
@@ -23,8 +25,7 @@ export const projectContent = [
         github: "https://github.com/MIN82814/leafAndHome",
         demo: "https://min82814.github.io/leafAndHome/",
         responsiblePages: [
-       
- {
+          {
             name: "文章列表頁",
             url: "https://min82814.github.io/leafAndHome/#/articles",
           },
@@ -32,11 +33,10 @@ export const projectContent = [
             name: "單一文章頁",
             url: "https://min82814.github.io/leafAndHome/#/articles/-OjFbN8au2K1LWeWt0Vp",
           },
-
         ],
-            },
+      },
       responsibilities: [
-     "✦ 3 個文章前後台模組開發，包含文章列表頁、單篇文章頁與後台文章管理頁， RWD 介面設計與互動功能實作。",
+        "✦ 3 個文章前後台模組開發，包含文章列表頁、單篇文章頁與後台文章管理頁， RWD 介面設計與互動功能實作。",
         "✦ 串接 8 支文章模組 RESTful API，透過 API service 模組化管理前台文章資料、後台 CRUD 與圖片上傳流程，並負責 API 回傳資料整合與畫面呈現。",
         "✦ 採用 React 元件化開發模式，將文章頁拆分為 Hero、文章內容、相關商品、相關文章、電子報與留言等功能元件，提升結構清晰度與維護性。",
         "✦ 文章搜尋、標籤篩選與分頁功能，透過 React state 管理搜尋條件與頁碼，完成前端資料篩選、排序與分頁邏輯。",
@@ -47,16 +47,16 @@ export const projectContent = [
       contentImages: [
         {
           title: "單一文章頁 完整版面展示",
-          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_detail-demo.png?raw=true"
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_detail-demo.png?raw=true",
         },
         {
           title: "文章列表頁 完整版面展示",
-          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_list-demo.png?raw=true"
-        }
-      ]
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/leafAndHome_list-demo.png?raw=true",
+        },
+      ],
     },
   },
-    {
+  {
     id: "project-002",
     date: "Sep, 2025",
     dateAttr: "2025-09",
@@ -71,17 +71,18 @@ export const projectContent = [
     modal: {
       heroImage:
         "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_hero.jpg?raw=true",
-        mobileHeroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_mobileHero.png?raw=true",
-      introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_introduce.jpg?raw=true",
+      mobileHeroImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_mobileHero.png?raw=true",
+      introImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU_modal_introduce.jpg?raw=true",
       intro:
         "與 AAPD UI 設計團隊協作開發行動端記帳 App，參與 UI 設計溝通、Figma 設計稿交接與前端介面實作，專案著重行動端操作體驗、介面一致性與元件化開發流程。",
-        technologies: ["HTML", "SCSS", "Bootstrap 5", "Git / GitHub", "SVG"],
+      technologies: ["HTML", "SCSS", "Bootstrap 5", "Git / GitHub", "SVG"],
       links: {
-
- github: "https://github.com/MIN82814/CASHU",
+        github: "https://github.com/MIN82814/CASHU",
         demo: "https://min82814.github.io/CASHU/",
         responsiblePages: [
-           {
+          {
             name: "新增紀錄",
             url: "https://min82814.github.io/CASHU/log-add.html",
           },
@@ -90,7 +91,7 @@ export const projectContent = [
             url: "https://min82814.github.io/CASHU/plan-save-detail.html",
           },
         ],
-             },
+      },
       responsibilities: [
         "✦ 行動端介面切版與流程實作<br>CASHU 記帳 App「新增紀錄」與「存錢計畫」兩大核心流程開發，完成 7 個行動端頁面的切版與互動介面整合，依據 Figma 設計稿完成 375px 行動端介面呈現。",
         "✦ SCSS 架構規劃與共用樣式開發<br>規劃 SCSS 模組化架構，建立底部導覽列、手機外框與共用 UI 樣式，提升樣式一致性與維護性。",
@@ -101,9 +102,9 @@ export const projectContent = [
       contentImages: [
         {
           title: "新增紀錄及存錢計畫頁面 完整版面展示",
-          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU-demo.png?raw=true"
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/CASHU-demo.png?raw=true",
         },
-             ]
+      ],
     },
   },
   {
@@ -121,17 +122,18 @@ export const projectContent = [
     modal: {
       heroImage:
         "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_hero.jpg?raw=true",
-        mobileHeroImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_mobileHero.png?raw=true",
-      introImage: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_introduce.jpg?raw=true",
+      mobileHeroImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_mobileHero.png?raw=true",
+      introImage:
+        "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_modal_introduce.jpg?raw=true",
       intro:
         "以手工餅乾品牌為主題的多頁式電商網站切版專案，採用 EJS 模板與 SCSS 架構化開發，完成首頁、商品列表、商品詳細頁、購物車、結帳頁與會員中心等介面實作。專案著重於版面規劃、元件拆分、RWD 響應式設計與團隊協作開發流程。",
   technologies: ["HTML", "SCSS", "Bootstrap 5", "Vite", "Git / GitHub"],
       links: {
-
- github: "https://github.com/MIN82814/Happinesscookie",
+        github: "https://github.com/MIN82814/Happinesscookie",
         demo: "https://min82814.github.io/Happinesscookie/",
         responsiblePages: [
-           {
+          {
             name: "首頁",
             url: "https://min82814.github.io/Happinesscookie/",
           },
@@ -140,7 +142,7 @@ export const projectContent = [
             url: "https://min82814.github.io/Happinesscookie/product.html",
           },
         ],
-             },
+      },
       responsibilities: [
         "✦ 商品詳細頁 UI 規劃與開發<br>獨立規劃商品詳細頁資訊架構與版面設計，進行 RWD 響應式切版，提升跨裝置瀏覽體驗。",
         "✦ 互動元件開發<br>製作商品圖片輪播與顧客評價輪播功能，並整合側邊購物車（Offcanvas）介面與加入購物車後的互動效果，強化購物流程的操作體驗。",
@@ -150,13 +152,13 @@ export const projectContent = [
       contentImages: [
         {
           title: "首頁頁面 完整版面展示",
-          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie-demo.png?raw=true"
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie-demo.png?raw=true",
         },
-{
+        {
           title: "產品詳細頁面 完整版面展示",
-          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_detail-demo.png?raw=true"
+          url: "https://github.com/MIN82814/PortfolioPhoto/blob/main/ProjectPhoto/Happinesscookie_detail-demo.png?raw=true",
         },
-             ]
+      ],
     },
   },
 ];
@@ -231,19 +233,21 @@ function renderModalContent(project) {
   const responsibilitiesList = document.querySelector(
     ".modal-responsibilities",
   );
-const contentGallery = document.querySelector(".modal-content-gallery");
+  const contentGallery = document.querySelector(".modal-content-gallery");
 
- 
   // 填大圖的網址與替代文字
   if (modalHero) {
-    modalHero.src = project.modal.heroImage; 
+    modalHero.src = project.modal.heroImage;
     modalHero.alt = project.title;
   }
-  
+
   if (modalHeroMobile) {
     // 💡 填入手機版的圖片網址（注意：source 標籤要改的是 srcset 屬性！）
     // 如果資料裡忘記寫手機版大圖，就用桌機版頂替（|| 預防機制）
-    modalHeroMobile.setAttribute("srcset", project.modal.mobileHeroImage || project.modal.heroImage);
+    modalHeroMobile.setAttribute(
+      "srcset",
+      project.modal.mobileHeroImage || project.modal.heroImage,
+    );
   }
 
   // 填時間
@@ -338,12 +342,11 @@ const contentGallery = document.querySelector(".modal-content-gallery");
       .join("");
   }
 
- // 底部網頁完整大圖
+  // 底部網頁完整大圖
   if (contentGallery) {
     const imagesArray = project.modal.contentImages;
 
     if (imagesArray && imagesArray.length > 0) {
-      
       contentGallery.innerHTML = imagesArray
         .map((imgObj) => {
           // 💡 貼心防呆：萬一以後有舊專案還是寫舊的字串網址，我們做個相容性判斷
@@ -353,7 +356,7 @@ const contentGallery = document.querySelector(".modal-content-gallery");
 
           return `
             <div class="gallery-item">
-              <h4 class="text-primary-900 mb-3 fs-heading-xxs text-align-center">${title}</h4>
+              <h4 class="text-neutral-700 mb-3 fs-heading-xxs text-align-center">${title}</h4>
               
               <img 
                 src="${url}" 
@@ -365,7 +368,6 @@ const contentGallery = document.querySelector(".modal-content-gallery");
           `;
         })
         .join("");
-
     } else {
       contentGallery.innerHTML = "";
     }
